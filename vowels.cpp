@@ -3,9 +3,9 @@ using namespace std;
 int main()
 {
     string word;
-    cout<<"input any string:";
+    cout<<"input any string:";`  
     getline(cin , word);
-    int count = 0;
+0    int count = 0;
     for(auto j = 0; j < word.length() ; j++)
     {
         char i = word[j];
