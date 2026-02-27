@@ -48,6 +48,12 @@ int main()
     temp = head;
     cout<<"after inserting at end: ";
     print_list(head);
+    //inserting at index 2
+    Node* ins = new Node(2);
+    temp = head->next->next;
+    ins->next = temp;
+    head->next->next = ins;
+    print_list(head);
     return 0;
 
 }
