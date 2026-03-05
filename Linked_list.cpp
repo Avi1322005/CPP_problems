@@ -54,6 +54,18 @@ int main()
     ins->next = temp;
     head->next->next = ins;
     print_list(head);
+    //deleting the last element in linked list
+    temp = head;
+    while(temp->next->next != NULL)
+    {
+        temp = temp->next;
+    }
+    delete temp->next;
+    temp->next = NULL;
+    temp = head;
+    cout<<"after deleting an element from end: ";
+    print_list(head);
+
     return 0;
 
 }
